@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Church Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero-bg {
+      background-image: url('church2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .global-family-bg {
+      background-image: url('global.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="absolute w-full z-10 p-4 bg-transparent text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl md:text-3xl font-bold">CHURCH</h1>
+      
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="#" class="hover:text-yellow-400 transition duration-300">Home</a>
+        <a href="#" class="hover:text-yellow-400 transition duration-300">About</a>
+        <a href="#" class="hover:text-yellow-400 transition duration-300">Sermons</a>
+        <a href="#" class="hover:text-yellow-400 transition duration-300">Contact</a>
+        <button class="bg-white text-gray-900 px-6 py-2 rounded-md font-semibold hover:bg-yellow-400 transition duration-300">Donate</button>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-white">
+        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-gray-900 bg-opacity-95 rounded-lg">
+      <a href="#" class="block text-center py-3 text-white hover:bg-yellow-500 transition">Home</a>
+      <a href="#" class="block text-center py-3 text-white hover:bg-yellow-500 transition">About</a>
+      <a href="#" class="block text-center py-3 text-white hover:bg-yellow-500 transition">Sermons</a>
+      <a href="#" class="block text-center py-3 text-white hover:bg-yellow-500 transition">Contact</a>
+      <div class="p-4 text-center">
+        <button class="bg-white text-gray-900 px-6 py-2 rounded-md font-semibold hover:bg-yellow-400 transition w-full">Donate</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg h-[80vh] md:h-screen flex items-center justify-center text-white">
+    <div class="text-center bg-black bg-opacity-40 p-6 md:p-10 rounded-lg mx-4">
+      <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">ABOUT OUR CHURCH</h2>
+      <p class="mt-4 text-sm sm:text-lg md:text-xl max-w-2xl mx-auto">Discover our story, our mission, and the people who make our community a family.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-12 md:py-20 bg-gray-50">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl md:text-4xl font-bold text-gray-900">A church that's all about people</h3>
+        <p class="mt-6 text-gray-600 leading-relaxed">
+          We are a vibrant, multicultural community of believers who are passionate about sharing the love of Jesus with our city and the world.
+        </p>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Our services are designed to be engaging and relevant, with contemporary worship, practical teaching, and a strong emphasis on community.
+        </p>
+      </div>
+      <div>
+        <img src="church.jpg" alt="Church community gathering" class="rounded-lg shadow-xl w-full h-auto object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / VALUES -->
+  <section class="py-12 md:py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-4xl font-bold">Our Mission, Vision, and Values</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-gray-600">These are the principles that guide everything we do as a church family.</p>
+      <div class="mt-12 grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Mission -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center order-2 md:order-1">
+          <div class="flex items-center justify-center h-14 w-14 md:h-16 md:w-16 bg-yellow-400 text-white rounded-full mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 012-2h2a2 2 0 012 2v6m-8-12V7a2 2 0 012-2h4a2 2 0 012 2v2m-6 9h6"/></svg>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Our Mission</h4>
+          <p class="text-gray-600">To lead people into a growing relationship with Jesus Christ by creating environments where they are encouraged and equipped.</p>
+        </div>
+        <div class="order-1 md:order-2">
+          <img src="mission.jpg" alt="Our Mission" class="w-full h-auto rounded-lg shadow-md object-cover">
+        </div>
+
+        <!-- Vision -->
+        <div class="order-3">
+          <img src="vision.jpg" alt="Our Vision" class="w-full h-auto rounded-lg shadow-md object-cover">
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center order-4">
+          <div class="flex items-center justify-center h-14 w-14 md:h-16 md:w-16 bg-yellow-400 text-white rounded-full mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Our Vision</h4>
+          <p class="text-gray-600">To be a beacon of hope and a center for spiritual growth in our community.</p>
+        </div>
+
+        <!-- Values -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center order-6 md:order-5">
+          <div class="flex items-center justify-center h-14 w-14 md:h-16 md:w-16 bg-yellow-400 text-white rounded-full mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Our Values</h4>
+          <p class="text-gray-600">We value authentic worship, biblical teaching, genuine community, passionate prayer, and generous living.</p>
+        </div>
+        <div class="order-5 md:order-6">
+          <img src="values.jpg" alt="Our Values" class="w-full h-auto rounded-lg shadow-md object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASTORS -->
+  <section class="py-12 md:py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-4xl font-bold">Meet Our Pastors</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-gray-600">Our leadership team is dedicated to serving our congregation and community.</p>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="john.jpg" alt="Pastor John Doe" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-lg md:text-xl font-bold">John Doe</h4>
+            <p class="text-yellow-500 font-medium">Senior Pastor</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="jane.jpg" alt="Pastor Jane Smith" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-lg md:text-xl font-bold">Jane Smith</h4>
+            <p class="text-yellow-500 font-medium">Associate Pastor</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="mike.jpg" alt="Pastor Mike Johnson" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-lg md:text-xl font-bold">Mike Johnson</h4>
+            <p class="text-yellow-500 font-medium">Youth Pastor</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="emily.jpg" alt="Pastor Emily Williams" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-lg md:text-xl font-bold">Emily Williams</h4>
+            <p class="text-yellow-500 font-medium">Worship Pastor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FAMILY -->
+  <section class="global-family-bg py-20 md:py-28 bg-fixed">
+    <div class="container mx-auto px-4 text-center text-white">
+      <div class="bg-black bg-opacity-50 p-6 md:p-10 rounded-lg inline-block mx-4">
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold">We are a global family</h2>
+        <p class="mt-4 text-sm sm:text-lg max-w-2xl mx-auto">From every nation, tribe, and tongue, united by one faith.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BELIEFS -->
+  <section class="py-12 md:py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-8">What We Believe</h2>
+        <div class="space-y-4">
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg md:text-xl mb-2">The Scriptures</h3>
+            <p class="text-gray-600">We believe the entire Bible is the inspired Word of God...</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg md:text-xl mb-2">The Godhead</h3>
+            <p class="text-gray-600">We believe in one God who exists in three distinct persons: Father, Son, and Holy Spirit...</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg md:text-xl mb-2">Salvation</h3>
+            <p class="text-gray-600">We believe that salvation is a gift from God, received by grace through faith in Jesus Christ alone...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">CHURCH</h3>
+          <p class="text-gray-400 max-w-md mx-auto md:mx-0">Join us this Sunday for a time of worship, community, and an inspiring message. We can't wait to meet you!</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-yellow-400">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-400">Sermons</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-400">Ministries</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-400">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>123 Church Street, City, State 54321</li>
+            <li>(123) 456-7890</li>
+            <li>hello@church.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+        <p>&copy; 2024 Church Template. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
